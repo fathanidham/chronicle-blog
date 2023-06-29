@@ -1,7 +1,6 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import { BsFillBookmarkStarFill } from 'react-icons/bs';
-import { AiFillLike } from 'react-icons/ai';
-
+import { AiFIllLike } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 function CardArticles({ articles }) {
   
@@ -54,9 +53,8 @@ function CardArticles({ articles }) {
                 <Text color={'primaryTextIcon'} fontSize={'md'}>
                   {item.total_fav}
                 </Text>
-                <AiFillLike />
+                <AiFIllLike />
               </Flex>
-              <BsFillBookmarkStarFill onClick={onBookmark} cursor={'pointer'} />
             </Flex>
           </Box>
 
