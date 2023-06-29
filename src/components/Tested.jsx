@@ -11,7 +11,7 @@ function getStatus(status) {
   }
 }
 
-function Toast(toast, { title, status }) {
+function Tested(toast, { title, status }) {
   return toast({
     title: title,
     status: getStatus(status),
@@ -21,4 +21,4 @@ function Toast(toast, { title, status }) {
   });
 }
 
-export default Toast;
+export default Tested;

@@ -1,16 +1,17 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import { BsFillBookmarkPlusFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 import { AiFillLike } from 'react-icons/ai';
 
-function onLike() {
-  alert('Like');
-}
-
-function onBookmark() {
-  alert('Bookmark');
-}
 
 function CardArticles({ articles }) {
+  
+  const navigate = useNavigate();
+  
+  function toRead(item){
+    sessionStorage.setItem('read', JSON.stringify(item));
+    navigate('/read');
+  }
+  
   return articles.map(item => {
     return (
       <Flex
@@ -21,6 +22,8 @@ function CardArticles({ articles }) {
         overflow={'hidden'}
         boxShadow={'md'}
         transition={'.2s'}
+        onClick={() => toRead(item)}
+        cursor={'pointer'}
         _hover={{
           transform: 'translate(0, -0.65rem)',
           transition: '.3s',
@@ -49,11 +52,10 @@ function CardArticles({ articles }) {
             >
               <Flex gap={1}>
                 <Text color={'primaryTextIcon'} fontSize={'md'}>
-                  {item.likes}
+                  {item.total_fav}
                 </Text>
-                <AiFillLike onClick={onLike} cursor={'pointer'} />
+                <AiFillLike />
               </Flex>
-              <BsFillBookmarkPlusFill onClick={onBookmark} cursor={'pointer'} />
             </Flex>
           </Box>
 
@@ -92,10 +94,10 @@ function CardArticles({ articles }) {
         </Box>
 
         <Text
-          // lines of content
-          px={'20px'}
-          py={'1px'}
-          h={'6rem'}
+          // 3 lines of content
+          px={'10px'}
+          py={'3px'}
+          h={'4.8rem'}
           noOfLines={3}
           textAlign={'justify'}
           fontSize={'md'}

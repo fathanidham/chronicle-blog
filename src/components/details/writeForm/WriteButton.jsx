@@ -1,6 +1,5 @@
 import { Button, useDisclosure } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import { RiQuillPenLine } from 'react-icons/ri';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import ModalSignIn from '../login/ModalLogin';
@@ -81,7 +80,6 @@ function WriteButton() {
   return (
     <>
       <Button
-        leftIcon={<RiQuillPenLine />}
         variant={'outline'}
         color={'primaryTextIcon'}
         borderColor={'login'}
