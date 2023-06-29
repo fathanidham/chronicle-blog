@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import { BsFillBookmarkStarFill } from 'react-icons/bs';
+import { BsFillBookmarkPlusFill } from 'react-icons/bs';
 import { AiFillLike } from 'react-icons/ai';
 
 function onLike() {
@@ -53,7 +53,7 @@ function CardArticles({ articles }) {
                 </Text>
                 <AiFillLike onClick={onLike} cursor={'pointer'} />
               </Flex>
-              <BsFillBookmarkStarFill onClick={onBookmark} cursor={'pointer'} />
+              <BsFillBookmarkPlusFill onClick={onBookmark} cursor={'pointer'} />
             </Flex>
           </Box>
 
