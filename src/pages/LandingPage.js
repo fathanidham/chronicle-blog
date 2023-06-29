@@ -1,10 +1,12 @@
-import { Box, Flex, Select, Text } from '@chakra-ui/react';
+import { Box, Flex, Select, Text, Image } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import CategorySidebar from '../components/CategorySidebar';
 import ContainerPosts from '../components/ContainerPosts';
 import CaptionCarousel from '../components/carousel/Carousel';
 import { getLatest } from '../api/BlogApi';
 import Page from '../components/Page';
+
+
 
 function LandingPage({
   postList,
@@ -50,9 +52,12 @@ function LandingPage({
 
   return (
     <Flex direction={'row'} w={'full'}>
+      
       <Flex direction={'column'} w={'calc(100% - 16rem)'} gap={5} py={5}>
         <Flex direction={'row'} px={5} alignItems={'center'} gap={2}>
+          
           <Box bgColor={'#000000'} w={2} h={'px'} flexWrap={'wrap'} />
+          
           <Text fontSize={'1.5rem'}>Latest</Text>
           <Box bgColor={'#000000'} flexGrow={1} h={'px'} flexWrap={'wrap'} />
         </Flex>

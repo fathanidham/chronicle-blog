@@ -6,7 +6,7 @@ import {
   BiChevronsRight,
 } from 'react-icons/bi';
 
-function Pagiantaion({ page, changePage }) {
+function Page({ page, changePage }) {
   return (
     <Flex gap={1}alignSelf={'center'}>
       <Box
@@ -144,4 +144,4 @@ function Pagiantaion({ page, changePage }) {
   );
 }
 
-export default Pagiantaion;
+export default Page;

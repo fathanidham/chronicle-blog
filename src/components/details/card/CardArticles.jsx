@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import { AiFIllLike } from 'react-icons/ai';
+import { HiHeart } from 'react-icons/hi';
 import { useNavigate } from 'react-router-dom';
 
 function CardArticles({ articles }) {
@@ -53,7 +53,7 @@ function CardArticles({ articles }) {
                 <Text color={'primaryTextIcon'} fontSize={'md'}>
                   {item.total_fav}
                 </Text>
-                <AiFIllLike />
+                <HiHeart />
               </Flex>
             </Flex>
           </Box>
