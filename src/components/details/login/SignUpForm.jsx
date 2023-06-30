@@ -1,5 +1,5 @@
 import { FiMail, FiPhone, FiUnlock, FiUser } from 'react-icons/fi';
-import CustomInputForm from './forgotForm/CustomInputForm';
+import CustomInputForm from '../forgotForm/CustomInputForm';
 import { useState } from 'react';
 
 function SignUpForm() {
@@ -24,7 +24,7 @@ function SignUpForm() {
       <CustomInputForm
         id="phone"
         type="tel"
-        placeholder="Phone"
+        placeholder="Phone Number"
         icon={<FiPhone color={"primaryTextIcon"} />}
       />
       <CustomInputForm
@@ -38,7 +38,7 @@ function SignUpForm() {
       <CustomInputForm
         id="confirm-password"
         type="password"
-        placeholder="Re-type Password"
+        placeholder="Confirm Password"
         pass={showPassConfirm}
         onPass={() => setShowPassConfirm(!showPassConfirm)}
         icon={<FiUnlock color={"primaryTextIcon"} />}

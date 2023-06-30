@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Toast from '../components/Tested';
+import Toast from '../components/Toast';
 
 const API_BASE_URL = 'https://minpro-blog.purwadhikabootcamp.com';
 const API_BLOG = '/api/blog';

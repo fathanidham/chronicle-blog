@@ -1,6 +1,6 @@
-import { Text, Flex, Image } from '@chakra-ui/react';
+import { Text, Flex } from '@chakra-ui/react';
 import { GrCloud } from 'react-icons/gr';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import c from '../assets/c.png'
 
 function NavLeft() {

@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import NavLeft from './NavLeft';
 import NavRight from './NavRight';
 
-function NavBar() {
+function NavBar(funcSearch) {
   return (
     <Flex
       w={'full'}
@@ -21,7 +21,7 @@ function NavBar() {
       mr={'10'}
       />
         <Spacer />
-          <SearchBar mr={10}/>
+          <SearchBar mr={10} funcSearch={funcSearch}/>
         <Spacer />
         
       <NavRight />

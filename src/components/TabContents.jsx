@@ -10,9 +10,9 @@ function TabContents() {
   return (
     <Tabs isFitted variant={'enclosed-colored'}>
       <TabList pos={"sticky"} top={"4rem"} w={"full"}>
-        <Tab>One</Tab>
-        <Tab>Two</Tab>
-        <Tab>Three</Tab>
+        <Tab>1</Tab>
+        <Tab>2</Tab>
+        <Tab>3</Tab>
       </TabList>
       <TabPanels>
         <TabPanel py={"0px"}><ContainerMain/></TabPanel>

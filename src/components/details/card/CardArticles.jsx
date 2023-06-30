@@ -93,7 +93,7 @@ function CardArticles({ articles }) {
         </Box>
 
         <Text
-          // 3 lines of content
+          //Content
           px={'10px'}
           py={'3px'}
           h={'4.8rem'}

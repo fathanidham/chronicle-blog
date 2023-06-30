@@ -11,7 +11,7 @@ import {
   useToast,
 } from '@chakra-ui/react';
 import LoginForm from './LoginForm';
-import SignUpForm from '../SignUpForm';
+import SignUpForm from './SignUpForm';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../../../reducer/AuthReducer';
@@ -90,9 +90,9 @@ function ModalLogin({ isOpen, onClose }) {
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
-      <ModalOverlay backdropFilter={'blur(2px)'} />
+      <ModalOverlay backdropFilter={'solid(2px)'} />
       <ModalContent m={'auto'}>
-        <FormControl p={'3rem'}>
+        <FormControl p={'1rem'}>
           <ModalCloseButton />
           <VStack>
             <Text fontSize={'2rem'} fontWeight={'semibold'}>
@@ -122,9 +122,9 @@ function ModalLogin({ isOpen, onClose }) {
             )}
 
             <Button
-              w={'100%'}
-              borderRadius={'3rem'}
-              color={'primaryTextIcon'}
+              w={'30%'}
+              borderRadius={'1rem'}
+              color={'white'}
               bgColor={'login'}
               _hover={{ bgColor: 'loginSecondary' }}
               onClick={wantForgot? onForgotPass : wantLogin ? onSignIn : onSignUp}
@@ -133,7 +133,7 @@ function ModalLogin({ isOpen, onClose }) {
             </Button>
 
             <Text textAlign={'center'} fontSize={'sm'}>
-              {wantLogin ? 'Do you want to join?' : 'Already a member?'}
+              {wantLogin ? 'Come join us!' : 'Already a member?'}
             </Text>
 
             <Text

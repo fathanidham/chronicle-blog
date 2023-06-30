@@ -12,7 +12,7 @@ import {
   import CardTag from '../../src/components/details/card/CardTag';
   import { HiHeart } from 'react-icons/hi';
   import { likeBlog } from '../api/BlogApi';
-  import Toast from './Tested';
+  import Toast from './Toast';
   import { useNavigate } from 'react-router-dom';
   
   function ContainerArticle({ item }) {

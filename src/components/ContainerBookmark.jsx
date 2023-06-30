@@ -1,7 +1,7 @@
+import CardBookmark from './details/card/CardBookmark';
 import { Grid, useToast } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { dislikeBlog, getBookmark } from '../api/BlogApi';
-import CardBookmark from './details/card/CardBookmark';
 
 function ContainerBookmark() {
   const [bookmarks, setBookmarks] = useState([]);

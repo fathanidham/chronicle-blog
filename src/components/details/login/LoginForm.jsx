@@ -11,8 +11,8 @@ function LoginForm() {
       <CustomInputForm
         id="username"
         type="text"
-        placeholder="Username/Email/Phone"
-        icon={<FiUser color={"primaryTextIcon"} />}
+        placeholder="Username/Email/Phone Number"
+        icon={<FiUser />}
       />
       <CustomInputForm
         id="password"
@@ -20,7 +20,7 @@ function LoginForm() {
         placeholder="Password"
         pass={showPass}
         onPass={() => setShowPass(!showPass)}
-        icon={<FiUnlock color={"primaryTextIcon"} />}
+        icon={<FiUnlock />}
       />
     </>
   );
